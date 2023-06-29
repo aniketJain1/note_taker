@@ -5,12 +5,12 @@
 
 <hibernate-configuration>
 	<session-factory>
-		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 		<property name="connection.url">jdbc:mysql://localhost:3306/notetaker</property>
 		<property name="connection.username">root</property>
 		<property name="conncetion.password"></property>
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
 		<mapping class="com.entities.Note" />
 		
