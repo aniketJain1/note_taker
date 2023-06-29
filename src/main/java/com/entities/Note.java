@@ -15,7 +15,7 @@ public class Note {
 
 	@Id
 	private String id;
-	private String tittle;
+	private String title;
 	@Column(length = 1500)
 	private String content;
 	private Date addedDate;
@@ -25,11 +25,11 @@ public class Note {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getTittle() {
-		return tittle;
+	public String getTitle() {
+		return title;
 	}
-	public void setTittle(String tittle) {
-		this.tittle = tittle;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	public String getContent() {
 		return content;
@@ -49,13 +49,13 @@ public class Note {
 	}
 	@Override
 	public String toString() {
-		return "Note [id=" + id + ", tittle=" + tittle + ", content=" + content + ", addeDate=" + addedDate + "]";
+		return "Note [id=" + id + ", title=" + title + ", content=" + content + ", addedDate=" + addedDate + "]";
 	}
-	public Note(String tittle, String content, Date addeDate) {
+	public Note(String title, String content, Date addeDate) {
 		super();
 //		this.id = new Random().nextInt(100000);
 		this.id = UUID.randomUUID().toString();
-		this.tittle = tittle;
+		this.title = title;
 		this.content = content;
 		this.addedDate = addeDate;
 	}

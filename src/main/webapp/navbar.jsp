@@ -6,15 +6,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
+        <li class="nav-item home">
+          <a class="nav-link " aria-current="page" href="index.jsp" id="homenav">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="add_notes.jsp">AddNote</a>
+          <a class="nav-link" href="add_notes.jsp" id="addnotenav">AddNote</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="all_notes.jsp" tabindex="-1" aria-disabled="true">Show Note</a>
+          <a class="nav-link" href="all_notes.jsp" tabindex="-1" aria-disabled="true" id="shownotenav">ShowNote</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -23,4 +23,7 @@
       </form>
     </div>
   </div>
+  <div class="test" id="test">
+		</div>
 </nav>
+

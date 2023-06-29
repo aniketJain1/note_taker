@@ -11,11 +11,10 @@
 </head>
 <body>
 
-	<div class="container-fluid p-0 m-0">
+	<div class="container">
 		<%@include file="navbar.jsp"%>
-
-	</div>
-
+		
+	<br>
 	<h1>Please fill your note detail</h1>
 
 	<!-- This is add form -->
@@ -37,7 +36,7 @@
 				required
 				id="content" placeholder="enter your content here"
 				class="form-control"
-				style="height:300px"
+				style="height:250px"
 			></textarea>
 		</div>
 
@@ -45,7 +44,13 @@
 			<button type="submit" class="btn btn-primary">Add</button>
 		</div>
 		
+		
 	</form>
+	</div>
+	
+	<script>
+		document.getElementById("addnotenav").classList.add("active");
+	</script>
 
 </body>
 </html>
